@@ -1,0 +1,4 @@
+father(marge,bart).
+father(marge,lisa).
+father(marge,maggie).
+father(wilma,pebbles).

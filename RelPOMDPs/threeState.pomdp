@@ -1,0 +1,44 @@
+//pomdp file description
+stateVariables = [neartt,nearsc]
+states = [s1,s2,s3]
+initialBelief = [0.45,0.45,0.1]
+stateFacts = [neartt(s1),neartt(s2),nearsc(s3)]
+actions = [a1,a2,a3]
+observations = [sushibar,subway]
+observation: neartt(s1)=>sushibar(s1) 0.9
+observation: neartt(s1)=>subway(s1) 0.1
+observation: neartt(s2)=>sushibar(s2) 0.85
+observation: neartt(s2)=>subway(s2) 0.15
+observation: nearsc(s3)=>subway(s3) 0.95
+transition: T(s1,s1)^a1(s1) 0.45
+transition: T(s1,s2)^a1(s1) 0.45
+//transition: T(s1,s3)^a1(s1) 0.1
+transition: T(s2,s1)^a1(s2) 0.45
+transition: T(s2,s2)^a1(s2) 0.45
+transition: T(s2,s3)^a1(s2) 0.1
+transition: T(s3,s1)^a1(s3) 0.1
+transition: T(s3,s2)^a1(s3) 0.1
+transition: T(s3,s3)^a1(s3) 0.8
+transition: T(s1,s1)^a2(s1) 0.45
+transition: T(s1,s2)^a2(s1) 0.45
+transition: T(s1,s3)^a2(s1) 0.1
+transition: T(s2,s1)^a2(s2) 0.45
+transition: T(s2,s2)^a2(s2) 0.45
+transition: T(s2,s3)^a2(s2) 0.1
+transition: T(s3,s1)^a2(s3) 0.1
+transition: T(s3,s2)^a2(s3) 0.1
+transition: T(s3,s3)^a2(s3) 0.8
+transition: T(s1,s1)^a3(s1) 0.45
+transition: T(s1,s2)^a3(s1) 0.45
+transition: T(s1,s3)^a3(s1) 0.1
+transition: T(s2,s1)^a3(s2) 0.45
+transition: T(s2,s2)^a3(s2) 0.45
+transition: T(s2,s3)^a3(s2) 0.1
+transition: T(s3,s1)^a3(s3) 0.1
+transition: T(s3,s2)^a3(s3) 0.1
+transition: T(s3,s3)^a3(s3) 0.8
+reward: r(s1,-1)
+reward: r(s2,-1)
+reward: r(s3,50)
+horizon = 3
+discountFactor = 0.9

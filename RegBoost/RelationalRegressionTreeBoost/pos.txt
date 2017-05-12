@@ -1,0 +1,4 @@
+father(horner,bart).
+father(horner,lisa).
+father(horner,maggie).
+father(fred,pebbles).

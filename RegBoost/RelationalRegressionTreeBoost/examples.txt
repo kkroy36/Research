@@ -1,0 +1,8 @@
+leftValue(s1).
+leftValue(s3).
+leftValue(s6).
+leftValue(s4).
+leftValue(s5).
+leftValue(s8).
+leftValue(s7).
+leftValue(s2).
